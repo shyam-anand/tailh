@@ -4,11 +4,11 @@ Tail a file over http.
 The script uses wget to continuosly download a file from a URL and writes it a local file. The local file can be `tail -f`-ed.
 
 ## Usage
-Download the scipt to your machine. Add a symlink to the script using `ln -s` inside one of your `bin` directories in your `PATH` so that you can run the script as a command. After that you run
+Download the scipt to your machine. Add a symlink to the script using `ln -s` inside one of your `bin` directories in your `PATH` so that you can run the script as a command. After that, run
 
     $ tailh [-O outfile] [-o logfile] [-v] URL
 
-While this is running, do 
+and while this is running, do 
 
     $ tail -f outfile
     
