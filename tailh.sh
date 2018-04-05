@@ -81,8 +81,9 @@ fi
 
 while [ true ]
 do
-  wget -c -O $_outfile -o $_logfile $_url
+  r=$(wget -c -O $_outfile -o $_logfile $_url)
   if [ $? -ne 0 ]; then
-    exit
+    echo "Error ($?): File download failed"
+    exit 1;
   fi
 done
