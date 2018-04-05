@@ -30,9 +30,15 @@ Refer the *-O file* section in [wget documentation](https://www.gnu.org/software
 
 `-o logfile` 
 
-Logs all messages to `logfile`. Defaults to `/dev/null`,
+Logs all messages to `logfile`.
+
+This works by passing setting the `-o logfile` for wget. If not passed, `logfile` defaults to `/dev/null`,
 or `/dev/stdout` if `-v` option is passed
 
 `-v` 
 
-for verbosity
+[This functionality needs more work]
+
+If the `-o logfile` is not set, prints messages to stdout. Otherwise,
+prints the URL, and the filenames used.
+
