@@ -75,7 +75,7 @@ if $_verbose ; then
   echo "URL - $_url"
   echo "Local file - $_outfile"
   if [ $_logfile_override = true ]; then
-    echo "Log file $_logfile"
+    echo "Log file - $_logfile"
   fi
 fi
 
